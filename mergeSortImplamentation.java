@@ -4,19 +4,15 @@ import java.util.*;
 
 class Runner
 {
-	static int count = 0; 
-	
 	public static void main(String[] args)
 	{		
-		int[] arr = {32,7,5,2,6,11};
+		int[] arr = {9,8,7,6,5,4,3,2,1};
 		
 		Sort test = new Sort();
 		test.mergeSort(arr, arr.length);
 		
 		System.out.println(Arrays.toString(arr));
-		System.out.println(Runner.count);
 	}
-	
 }
 
 class Sort
@@ -66,20 +62,15 @@ class Sort
 		{
 			if(l[i] <= r[j])
 			{
-				// System.out.println(l[i]+ " " + r[j]+" ");
 				arr[k] = l[i]; 
 				k++; 
 				i++;
 			}
 			else 
 			{
-
-				// System.out.println(l[i]+ " " + r[j]+" ");
-
 				arr[k] = r[j]; 
 				k++; 
 				j++;
-				Runner.count += (l.length - i); 	
 			}
 			
 		}
@@ -88,17 +79,13 @@ class Sort
 		{
 			arr[k] = l[i]; 
 			k++; 
-			i++;
-			
-			
+			i++;			
 		}
 		while(j < right)
 		{
 			arr[k] = r[j]; 
 			k++; 
 			j++;
-
-			System.out.println("got here");
 		}
 	}
 }
