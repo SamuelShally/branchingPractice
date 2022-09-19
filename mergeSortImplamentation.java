@@ -7,7 +7,6 @@ class Runner
 	public static void main(String[] args)
 	{		
 
-		//made a change
 		// int[] arr = {32,7,5,2,6,11};
 		int[] arr = {9,8,7,6,5,4,3,2,1};
 		
